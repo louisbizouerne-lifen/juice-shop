@@ -9,6 +9,8 @@ const security = require('./insecurity')
 const challengeUtils = require('./challengeUtils')
 const challenges = require('../data/datacache').challenges
 
+var AWS_SECRET = "3248432789243978uhfdshfdshjfhjksdf";
+
 async function productPrice (query: string, user: string) {
   const [products] = await models.sequelize.query('SELECT * FROM Products')
   const queriedProducts = products
